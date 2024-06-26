@@ -61,7 +61,7 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 mt-8">
               <Link
-                href="#"
+                href="/clothing"
                 className="group flex flex-col items-center justify-center space-y-2 p-4 rounded-lg hover:bg-muted transition-colors"
                 prefetch={false}
               >
@@ -93,7 +93,7 @@ export default function Home() {
                 <span className="text-sm font-medium group-hover:text-primary">Accessories</span>
               </Link>
               <Link
-                href="#"
+                href="/accessoires"
                 className="group flex flex-col items-center justify-center space-y-2 p-4 rounded-lg hover:bg-muted transition-colors"
                 prefetch={false}
               >
@@ -101,7 +101,7 @@ export default function Home() {
                 <span className="text-sm font-medium group-hover:text-primary">Home</span>
               </Link>
               <Link
-                href="#"
+                href="/"
                 className="group flex flex-col items-center justify-center space-y-2 p-4 rounded-lg hover:bg-muted transition-colors"
                 prefetch={false}
               >
@@ -122,7 +122,7 @@ export default function Home() {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-8">
               <div className="bg-background rounded-lg shadow-lg overflow-hidden">
                 <img
-                  src="/placeholder.svg"
+                  src="/product1.png"
                   width="500"
                   height="500"
                   alt="Product 1"
@@ -147,7 +147,7 @@ export default function Home() {
               </div>
               <div className="bg-background rounded-lg shadow-lg overflow-hidden">
                 <img
-                  src="/placeholder.svg"
+                  src="/product2.png"
                   width="500"
                   height="500"
                   alt="Product 2"
@@ -172,7 +172,7 @@ export default function Home() {
               </div>
               <div className="bg-background rounded-lg shadow-lg overflow-hidden">
                 <img
-                  src="/placeholder.svg"
+                  src="/product3.png"
                   width="500"
                   height="500"
                   alt="Product 3"
@@ -197,7 +197,7 @@ export default function Home() {
               </div>
               <div className="bg-background rounded-lg shadow-lg overflow-hidden">
                 <img
-                  src="/placeholder.svg"
+                  src="/product4.png"
                   width="500"
                   height="500"
                   alt="Product 4"
