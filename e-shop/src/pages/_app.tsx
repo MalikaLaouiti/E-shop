@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Head from 'next/head';
-import './globals.css'; // Make sure this path is correct
+import './../app/globals.css'; // Make sure this path is correct
 
 import type { AppProps } from 'next/app';
 
