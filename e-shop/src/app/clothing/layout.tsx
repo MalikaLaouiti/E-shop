@@ -43,7 +43,7 @@ export default function Layout({children}: {
       name: "Classic T-Shirt",
       description: "A timeless wardrobe staple",
       price: 24.99,
-      image: "/placeholder.svg",
+      image: "/product1.svg",
       colors: ["black", "white", "gray"],
     },
     {
@@ -51,7 +51,7 @@ export default function Layout({children}: {
       name: "Denim Jeans",
       description: "Comfortable and stylish",
       price: 59.99,
-      image: "/placeholder.svg",
+      image: "/product1.svg",
       colors: ["blue", "black", "gray"],
     },
     {
@@ -59,7 +59,7 @@ export default function Layout({children}: {
       name: "Floral Dress",
       description: "Elegant and feminine",
       price: 49.99,
-      image: "/placeholder.svg",
+      image: "/product1.svg",
       colors: ["pink", "white", "blue"],
     },
     {
@@ -67,7 +67,7 @@ export default function Layout({children}: {
       name: "Leather Jacket",
       description: "Sleek and versatile",
       price: 99.99,
-      image: "/placeholder.svg",
+      image: "/product1.svg",
       colors: ["black", "brown", "burgundy"],
     },
     {
@@ -75,7 +75,7 @@ export default function Layout({children}: {
       name: "Striped Sweater",
       description: "Cozy and stylish",
       price: 39.99,
-      image: "/placeholder.svg",
+      image: "/product1.svg",
       colors: ["navy", "gray", "white"],
     },
     {
@@ -83,7 +83,7 @@ export default function Layout({children}: {
       name: "Chino Pants",
       description: "Comfortable and smart",
       price: 44.99,
-      image: "/placeholder.svg",
+      image: "/product1.svg",
       colors: ["khaki", "olive", "beige"],
     },
   ]
@@ -150,7 +150,7 @@ export default function Layout({children}: {
         <nav className="flex flex-col items-center gap-4 px-2 sm:py-5">
           <TooltipProvider>
             <Link
-              href="#"
+              href="/"
               className="group flex h-9 w-9 shrink-0 items-center justify-center gap-2 rounded-full bg-primary text-lg font-semibold text-primary-foreground md:h-8 md:w-8 md:text-base"
               prefetch={false}
             >
@@ -160,7 +160,7 @@ export default function Layout({children}: {
             <Tooltip>
               <TooltipTrigger asChild>
                 <Link
-                  href="#"
+                  href="/clothing"
                   className="flex h-9 w-9 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:text-foreground md:h-8 md:w-8"
                   prefetch={false}
                 >
@@ -173,7 +173,7 @@ export default function Layout({children}: {
             <Tooltip>
               <TooltipTrigger asChild>
                 <Link
-                  href="#"
+                  href="/shop"
                   className="flex h-9 w-9 items-center justify-center rounded-lg bg-accent text-accent-foreground transition-colors hover:text-foreground md:h-8 md:w-8"
                   prefetch={false}
                 >
@@ -186,7 +186,7 @@ export default function Layout({children}: {
             <Tooltip>
               <TooltipTrigger asChild>
                 <Link
-                  href="#"
+                  href="/product"
                   className="flex h-9 w-9 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:text-foreground md:h-8 md:w-8"
                   prefetch={false}
                 >
