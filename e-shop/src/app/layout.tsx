@@ -2,7 +2,7 @@ import Head from "next/head"
 import css from "styled-jsx/css"
 
 import { IBM_Plex_Sans } from 'next/font/google'
-import './style.css'
+import './globals.css'
 
 const ibm_plex_sans = IBM_Plex_Sans({
   subsets: ['latin'],
