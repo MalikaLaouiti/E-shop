@@ -69,7 +69,7 @@ export default function Home() {
                 <span className="text-sm font-medium group-hover:text-primary">Clothing</span>
               </Link>
               <Link
-                href="#"
+                href="/shoes"
                 className="group flex flex-col items-center justify-center space-y-2 p-4 rounded-lg hover:bg-muted transition-colors"
                 prefetch={false}
               >
@@ -77,7 +77,7 @@ export default function Home() {
                 <span className="text-sm font-medium group-hover:text-primary">Shoes</span>
               </Link>
               <Link
-                href="#"
+                href="/bags"
                 className="group flex flex-col items-center justify-center space-y-2 p-4 rounded-lg hover:bg-muted transition-colors"
                 prefetch={false}
               >
@@ -85,7 +85,7 @@ export default function Home() {
                 <span className="text-sm font-medium group-hover:text-primary">Bags</span>
               </Link>
               <Link
-                href="#"
+                href="/accessoires"
                 className="group flex flex-col items-center justify-center space-y-2 p-4 rounded-lg hover:bg-muted transition-colors"
                 prefetch={false}
               >
@@ -93,7 +93,7 @@ export default function Home() {
                 <span className="text-sm font-medium group-hover:text-primary">Accessories</span>
               </Link>
               <Link
-                href="/accessoires"
+                href="/home"
                 className="group flex flex-col items-center justify-center space-y-2 p-4 rounded-lg hover:bg-muted transition-colors"
                 prefetch={false}
               >
@@ -101,7 +101,7 @@ export default function Home() {
                 <span className="text-sm font-medium group-hover:text-primary">Home</span>
               </Link>
               <Link
-                href="/"
+                href="/electronics"
                 className="group flex flex-col items-center justify-center space-y-2 p-4 rounded-lg hover:bg-muted transition-colors"
                 prefetch={false}
               >
