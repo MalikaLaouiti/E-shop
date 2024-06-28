@@ -10,13 +10,14 @@ import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbS
 import { Input } from "@/components/ui/input"
 import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuItem, DropdownMenuRadioGroup, DropdownMenuRadioItem } from "@/components/ui/dropdown-menu"
 import { Label } from "@/components/ui/label"
+import './../../globals.css'
 
-Archivo({
+const archivo= Archivo({
   subsets: ['latin'],
   display: 'swap',
 })
 
-Libre_Franklin({
+const libre_franklin= Libre_Franklin({
   subsets: ['latin'],
   display: 'swap',
 })
@@ -33,14 +34,16 @@ interface SelectedFilters {
   sort: SortFilterValue;
 }
 
-export function layout_categorie() {
+export default function Layout({children}: {
+  children: React.ReactNode
+}) {
   const products = [
     {
       id: 1,
       name: "Classic T-Shirt",
       description: "A timeless wardrobe staple",
       price: 24.99,
-      image: "/placeholder.svg",
+      image: "/product1.svg",
       colors: ["black", "white", "gray"],
     },
     {
@@ -48,7 +51,7 @@ export function layout_categorie() {
       name: "Denim Jeans",
       description: "Comfortable and stylish",
       price: 59.99,
-      image: "/placeholder.svg",
+      image: "/product1.svg",
       colors: ["blue", "black", "gray"],
     },
     {
@@ -56,7 +59,7 @@ export function layout_categorie() {
       name: "Floral Dress",
       description: "Elegant and feminine",
       price: 49.99,
-      image: "/placeholder.svg",
+      image: "/product1.svg",
       colors: ["pink", "white", "blue"],
     },
     {
@@ -64,7 +67,7 @@ export function layout_categorie() {
       name: "Leather Jacket",
       description: "Sleek and versatile",
       price: 99.99,
-      image: "/placeholder.svg",
+      image: "/product1.svg",
       colors: ["black", "brown", "burgundy"],
     },
     {
@@ -72,7 +75,7 @@ export function layout_categorie() {
       name: "Striped Sweater",
       description: "Cozy and stylish",
       price: 39.99,
-      image: "/placeholder.svg",
+      image: "/product1.svg",
       colors: ["navy", "gray", "white"],
     },
     {
@@ -80,7 +83,7 @@ export function layout_categorie() {
       name: "Chino Pants",
       description: "Comfortable and smart",
       price: 44.99,
-      image: "/placeholder.svg",
+      image: "/product1.svg",
       colors: ["khaki", "olive", "beige"],
     },
   ]
@@ -139,13 +142,15 @@ export function layout_categorie() {
         }
       })
   }, [selectedFilters, products])
+  
   return (
+    <html lang="en">
     <div className="flex min-h-screen w-full">
       <aside className="fixed inset-y-0 left-0 z-10 hidden w-14 flex-col border-r bg-background sm:flex">
         <nav className="flex flex-col items-center gap-4 px-2 sm:py-5">
           <TooltipProvider>
             <Link
-              href="#"
+              href="/"
               className="group flex h-9 w-9 shrink-0 items-center justify-center gap-2 rounded-full bg-primary text-lg font-semibold text-primary-foreground md:h-8 md:w-8 md:text-base"
               prefetch={false}
             >
@@ -155,7 +160,7 @@ export function layout_categorie() {
             <Tooltip>
               <TooltipTrigger asChild>
                 <Link
-                  href="#"
+                  href="/clothing"
                   className="flex h-9 w-9 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:text-foreground md:h-8 md:w-8"
                   prefetch={false}
                 >
@@ -168,7 +173,7 @@ export function layout_categorie() {
             <Tooltip>
               <TooltipTrigger asChild>
                 <Link
-                  href="#"
+                  href="/shop"
                   className="flex h-9 w-9 items-center justify-center rounded-lg bg-accent text-accent-foreground transition-colors hover:text-foreground md:h-8 md:w-8"
                   prefetch={false}
                 >
@@ -181,7 +186,7 @@ export function layout_categorie() {
             <Tooltip>
               <TooltipTrigger asChild>
                 <Link
-                  href="#"
+                  href="/product"
                   className="flex h-9 w-9 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:text-foreground md:h-8 md:w-8"
                   prefetch={false}
                 >
@@ -394,5 +399,6 @@ export function layout_categorie() {
         </main>
       </div>
     </div>
+  </html>
   )
 }
