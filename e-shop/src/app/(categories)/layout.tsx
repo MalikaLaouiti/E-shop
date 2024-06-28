@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion"
 import { Label } from "@/components/ui/label"
 import { Checkbox } from "@/components/ui/checkbox"
-
+import "./globals.css"
 
 export default function Layout({children}: {
     children: React.ReactNode
@@ -12,7 +12,7 @@ export default function Layout({children}: {
     return (
     <div className="flex min-h-screen">
       <aside className="bg-background border-r w-64 p-6 flex flex-col gap-6">
-        <Link href="#" className="flex items-center gap-2 font-semibold" prefetch={false}>
+        <Link href="/" className="flex items-center gap-2 font-semibold" prefetch={false}>
           <HomeIcon className="w-6 h-6" />
           <span>Home</span>
         </Link>
@@ -25,7 +25,7 @@ export default function Layout({children}: {
                 <ChevronDownIcon className="w-4 h-4" />
               </Button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent align="start" className="w-full">
+            <DropdownMenuContent align="start" className="w-full ">
               <DropdownMenuLabel>Sort Options</DropdownMenuLabel>
               <DropdownMenuSeparator />
               <DropdownMenuItem>Featured</DropdownMenuItem>
