@@ -14,30 +14,14 @@ export default function layout( {children} : {
   children: React.ReactNode
 }) {
   return (
-    <div>
-    <div className="grid md:grid-cols-[280px_1fr] gap-6 p-4 md:p-6">
-      <div className="bg-muted/40 rounded-lg p-4 md:p-6">
-          <Collapsible>
-            <CollapsibleTrigger className="flex items-center justify-between font-medium">
-              Rating
-              <ChevronDownIcon className="w-4 h-4 transition [&[data-state=open]]:rotate-180" />
-            </CollapsibleTrigger>
-            <CollapsibleContent>
-              <div className="grid gap-2">
-                <Checkbox id="rating-4">4 stars and above</Checkbox>
-                <Checkbox id="rating-3">3 stars and above</Checkbox>
-                <Checkbox id="rating-2">2 stars and above</Checkbox>
-                <Checkbox id="rating-1">1 star and above</Checkbox>
-              </div>
-            </CollapsibleContent>
-          </Collapsible>
-        </div>
-      </div>
+    <>
+    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center text-gray-800 p-4 md:p-6">{children}</h1>
+    <div className="grid md:grid-cols-[1000px_2fr] gap-6 p-4 md:p-6">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <Card>
           <CardHeader>
             <img
-              src="/placeholder.svg"
+              src="/product1.png"
               alt="Product Image"
               width={300}
               height={300}
@@ -209,7 +193,8 @@ export default function layout( {children} : {
           </CardContent>
         </Card>
       </div>
-    </div>
+      </div>
+      </>
   )
 }
 
