@@ -1,17 +1,18 @@
-import Link from "next/link"
+"use client"
+// import Link from "next/link"
 import { Collapsible, CollapsibleTrigger, CollapsibleContent } from "@/components/ui/collapsible"
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
-import { Label } from "@/components/ui/label"
 import { Checkbox } from "@/components/ui/checkbox"
-import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { Card, CardHeader, CardContent } from "@/components/ui/card"
 import { ChevronDownIcon } from "@/components/ui/chevrondownicon"
-import { HomeIcon } from "@/components/ui/homeicon"
 import { StarIcon } from "@/components/ui/staricon"
+import { Inter } from 'next/font/google'
+import "./../globals.css"
 
 
-export function layout1() {
+export default function layout( {children} : {
+  children: React.ReactNode
+}) {
   return (
     <div>
     <div className="grid md:grid-cols-[280px_1fr] gap-6 p-4 md:p-6">

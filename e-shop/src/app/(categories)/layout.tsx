@@ -1,3 +1,4 @@
+"use client"
 import Link from "next/link"
 import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuItem } from "@/components/ui/dropdown-menu"
 import { Button } from "@/components/ui/button"
@@ -6,7 +7,8 @@ import { Label } from "@/components/ui/label"
 import { Checkbox } from "@/components/ui/checkbox"
 import { ChevronDownIcon } from "@/components/ui/chevrondownicon"
 import { HomeIcon } from "@/components/ui/homeicon"
-import "@src/app/globals"
+import "./globals.css"
+
 
 export default function Layout({children}: {
     children: React.ReactNode
