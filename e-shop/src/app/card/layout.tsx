@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-
+import "./../globals.css"
 
 export default function layout({children}:
     {children :React.ReactNode}
@@ -57,10 +57,10 @@ export default function layout({children}:
         <div className="flex flex-col items-end gap-4">
           <div className="text-2xl font-bold">Total: ${total.toFixed(2)}</div>
           <div className="flex gap-4">
-            <Button variant="outline" size="lg">
+            <Button variant="outline" size="lg" className="bg-black text-white px-4 py-2 rounded transition duration-300 ease-in-out hover:bg-gray-700">
               Continue Shopping
             </Button>
-            <Button size="lg">Proceed to Checkout</Button>
+            <Button size="lg" className="bg-black text-white px-4 py-2 rounded transition duration-300 ease-in-out hover:bg-gray-700">Proceed to Checkout</Button>
           </div>
         </div>
       </div>
