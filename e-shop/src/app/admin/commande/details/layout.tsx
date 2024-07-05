@@ -23,6 +23,7 @@ import { Badge } from "@/components/ui/badge";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { FilterIcon } from "@/components/ui/filtericon";
 import { ChevronRightIcon } from "@/components/ui/chevronrighticon";
+import "./../../../globals.css"
 
 type Order = {
   orderNumber: string;
@@ -38,7 +39,7 @@ type Order = {
 
 type OrderKey = keyof Order;
 
-export function CommandeDetails() {
+export default function layout() {
   const [searchTerm, setSearchTerm] = useState<string>("");
   const [sortColumn, setSortColumn] = useState<OrderKey>("orderNumber");
   const [sortDirection, setSortDirection] = useState<"asc" | "desc">("asc");
